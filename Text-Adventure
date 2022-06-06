@@ -1,0 +1,187 @@
+#include <iostream>
+
+int main() {
+
+	int c1, c2;
+
+	std::cout << "Welcome to the adventure of your lifetime!\n";
+	std::cout << "You find yourself in a forest with three possible roads. Which one will you take? (Write the corresponding number)\n";
+	std::cout << "1) The straight road ahead through the trees\n";
+	std::cout << "2) The twisting road paved with stone back to town\n";
+	std::cout << "3) The uphill road to the side of the forest that climbs towards the mountain\n";
+
+	std::cin >> c1;
+
+
+		while (c1 < 1 or c1 > 3) {
+			std::cout << "Invalid choice, traveller! Try again!\n";
+			std::cout << "\n";
+
+			std::cout << "You find yourself in a forest with three possible roads. Which one will you take? (Write the corresponding number)\n";
+			std::cout << "1) The straight road ahead through the trees\n";
+			std::cout << "2) The twisting road paved with stone back to town\n";
+			std::cout << "3) The uphill road to the side of the forest that climbs towards the mountain\n";
+
+			std::cin >> c1;
+		}
+
+
+
+		if (c1 == 1) {
+
+			std::cout << "The road leads you further into the forest until you reach a wooden cabin.\n";
+
+			std::cout << "1) Take refuge in the cabin and sleep the night there.\n";
+			std::cout << "2) Sneak around the cabin and see if someone lives there.\n";
+			std::cout << "3) Leave and try to find a place to sleep in the forest.\n";
+
+			std::cin >> c2;
+
+			while (c2 < 1 or c2 > 3) {
+				std::cout << "Invalid choice, traveller! Try again!\n";
+				std::cout << "\n";
+
+				std::cout << "1) Take refuge in the cabin and sleep the night there.\n";
+				std::cout << "2) Sneak around the cabin and see if someone lives there.\n";
+				std::cout << "3) Leave and try to find a place to sleep in the forest.\n";
+
+				std::cin >> c2;
+			}
+
+			while (c2 == 3) {
+				std::cout << "You tried to sleep in the forest, but did not manage to make a fire and died of hypothermia. Try again!\n";
+				std::cout << "\n";
+
+				std::cout << "The road leads you further into the forest until you reach a wooden cabin.\n";
+
+				std::cout << "1) Take refuge in the cabin and sleep the night there.\n";
+				std::cout << "2) Sneak around the cabin and see if someone lives there.\n";
+				std::cout << "3) Leave and try to find a place to sleep in the forest.\n";
+
+				std::cin >> c2;
+			}
+
+			if (c2 == 1) {
+				std::cout << "You slept in the cabin, but at night, the master of the cabin, a hunter, came back home and captured you, putting you into his basement. He kept using you as a sex slave for the rest of his life.\n";
+				std::cout << "You have reached ending 1!\n";
+				std::cout << "\n";
+				std::cout << "Achievement Unlocked: Sexy Time!\n";
+			}
+			else if (c2 == 2) {
+
+				std::cout << "While sneaking around the cabin, you see an old lady baking pies through the window. She also sees you, and you are scared for a moment. Thankfully, she is friendly and invites you in to eat a pie. The pie is very tasty!\n";
+				std::cout << "You have reached ending 2!\n";
+				std::cout << "\n";
+				std::cout << "Achievement Unlocked: Tasty\n";
+			}
+
+		}
+		else if (c1 == 2) {
+			std::cout << "You reach the town central market where you are approached by an Arabic merchant who invites you into a room to try a new Arabic experience he calls a Hookah.\n";
+
+
+			std::cout << "1) You are suspicious of the merchant and do not trust him. Ignore him and go home.\n";
+			std::cout << "2) You are excited about trying something new in this small town where nothing ever happens. Go with the merchant.\n";
+			std::cout << "3) You think this new Hookah thing might be worth a lot of money. Attack the merchant and try to steal it from him.\n";
+
+			std::cin >> c2;
+
+			while (c2 < 1 or c2 > 3) {
+				std::cout << "Invalid choice, traveller! Try again!\n";
+				std::cout << "\n";
+
+				std::cout << "1) You are suspicious of the merchant and do not trust him. You choose to ignore him and go home.\n";
+				std::cout << "2) You are excited about trying something new in this small town where nothing ever happens. You go with the merchant.\n";
+				std::cout << "3) You think this new Hookah thing might be worth a lot of money. You attack the merchant and try to steal it from him.\n";
+
+				std::cin >> c2;
+			}
+
+			while (c2 == 3) {
+				std::cout << "You fight with the Arab merchant, but it turns out he is a very skillful fighter. After a hard battle, his knife pierces through your ribs and you are defeated. You die in the public square. Try again!\n";
+				std::cout << "\n";
+
+				std::cout << "1) You are suspicious of the merchant and do not trust him. You choose to ignore him and go home.\n";
+				std::cout << "2) You are excited about trying something new in this small town where nothing ever happens. You go with the merchant.\n";
+				std::cout << "3) You think this new Hookah thing might be worth a lot of money. You attack the merchant and try to steal it from him.\n";
+
+				std::cin >> c2;
+			}
+
+			if (c2 == 1) {
+				std::cout << "You go home and go to sleep on your straw bed. You will never know what a Hookah is and will never have this experience. Consumed by boredom and melancholy, you fall into depression and slowly die of starvation.\n";
+				std::cout << "You have reached ending 3!\n";
+				std::cout << "\n";
+				std::cout << "Achievement Unlocked: Sad\n";
+			}
+			else if (c2 == 2) {
+
+				std::cout << "You go with the merchant to try the Hookah. You enter his tent, where thick clouds of steam make it hard to see. However, you can still make out the arabic pillows and the carpets hanging on the wall, depicting the The Abduction from the Seraglio. You sit down and have the best Hookah the Orient has to offer.\n";
+				std::cout << "You have reached ending 4!\n";
+				std::cout << "\n";
+				std::cout << "Achievement Unlocked: Finally Some Good Fucking Hookah!\n";
+			}
+
+
+
+
+		}
+		else if (c1 == 3) {
+			std::cout << "You climb the mountain and reach the top of it, where you realise it is a volcano. The heat from the lava and the effort of climbing make you exhausted. A misterious hooded traveller at the top offers you water.\n";
+
+
+			std::cout << "1) Take the water from the traveller and thank them.\n";
+			std::cout << "2) You feel a sudden rage for this suspicious traveller. You decide to push them into the volcano.\n";
+			std::cout << "3) Don't take the water from the traveller, and try to find your own source of water by descending the mountain on the other side.\n";
+
+			std::cin >> c2;
+
+			while (c2 < 1 or c2 > 3) {
+				std::cout << "Invalid choice, traveller! Try again!\n";
+				std::cout << "\n";
+
+				std::cout << "1) Take the water from the traveller and thank him.\n";
+				std::cout << "2) You feel a sudden rage for this suspicious traveller. You decide to push him into the volcano.\n";
+				std::cout << "3) Don't take the water from the merchant, and try to find your own source of water by descending the mountain on the other side.\n";
+
+				std::cin >> c2;
+			}
+
+			while (c2 == 1) {
+				std::cout << "You take the water from the misterious traveller. Soon after drinking it, you start feeling bad. The traveller takes off their hood and reveals their identity. It is Queen Catherine de Medici, master of poisons. You have been poisoned and will soon die! Try again!\n";
+				std::cout << "\n";
+
+				std::cout << "1) Take the water from the traveller and thank them.\n";
+				std::cout << "2) You feel a sudden rage for this suspicious traveller. You decide to push them into the volcano.\n";
+				std::cout << "3) Don't take the water from the traveller, and try to find your own source of water by descending the mountain on the other side.\n";
+
+				std::cin >> c2;
+			}
+
+			if (c2 == 3) {
+				std::cout << "You start descending the mountain on the other side. Soon, you reach an opening with a water spring, birds singing and does drinking water from the spring. You drink the water and embrace the nature. Soon, you start growing a beard and explaining to the does why it is good to be vegan.\n";
+				std::cout << "You have reached ending 6!\n";
+				std::cout << "\n";
+				std::cout << "Achievement Unlocked: Hipster\n";
+			}
+			else if (c2 == 2) {
+
+				std::cout << "You push the traveller into the volcano and they die in the fiery pit of lava. You go back down the mountain and go home, but you will never know why you had this sudden urge to commit murder.\n";
+				std::cout << "You have reached ending 5!\n";
+				std::cout << "\n";
+				std::cout << "Achievement Unlocked: Anger Issues\n";
+			}
+
+
+
+
+
+		}
+
+
+
+
+
+		system("pause");
+
+}
